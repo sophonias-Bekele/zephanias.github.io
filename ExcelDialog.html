@@ -130,7 +130,7 @@
 
   function showData () {
     // Get the worksheet object we want to get the selected marks for
-    const worksheet = getSelectedSheet(selectedDatasources[0]);
+    const worksheet = getSelectedSheet(selectedDatasources[selectedDatasources.length-1]);
 
     // Call to get the selected marks for our sheet
     worksheet.getSummaryDataAsync({ maxRows: 50000 }).then(function (marks) {
